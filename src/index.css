@@ -6,6 +6,8 @@
 
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
+
+  --border-radius: 100px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -53,8 +55,8 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
-  border-radius: 100px;
+  background-color: var(--color-dark);
+  border-radius: var(--border-radius);
 }
 
 img {
@@ -99,20 +101,35 @@ h4 {
   color: var(--color-medium);
 }
 
-progress {
+
+
+progress[value] {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  appearance: none;
   width: 100%;
   height: 12px;
   grid-column: 1 / -1;
+  border-radius: var(--border-radius);
 }
 
-::-webkit-progress-bar {
+/** Webkit **/
+progress[value]::-webkit-progress-bar {
   background-color: var(--color-medium);
-  border-radius: 100px;
+  border-radius: var(--border-radius);
 }
-::-webkit-progress-value {
+
+progress[value]::-webkit-progress-value {
   background-color: var(--color-theme);
-  border-radius: 100px;
+  border-radius: var(--border-radius);
+}
+
+/** Firefox **/
+progress[value]::-moz-progress-bar {
+  background-color: var(--color-theme);
+  border-radius: var(--border-radius);
 }
 
 .btn {
@@ -124,7 +141,7 @@ progress {
   background-color: var(--color-dark);
   padding: 1.2rem 2.4rem;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: var(--border-radius);
   transition: 0.3s;
 }
 
@@ -175,7 +192,7 @@ progress {
 .result {
   background-color: var(--color-theme);
   color: var(--color-light);
-  border-radius: 100px;
+  border-radius: var(--border-radius);
   text-align: center;
   padding: 2rem 0;
   font-size: 2rem;
@@ -211,7 +228,7 @@ progress {
   color: var(--color-medium);
   border: 2px solid var(--color-dark);
   padding: 1.35rem 2.8rem;
-  border-radius: 100px;
+  border-radius: var(--border-radius);
 }
 
 /* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
