@@ -1,6 +1,6 @@
 # The React Quiz
 
-This project is a small React Quiz from [https://www.udemy.com/course/the-ultimate-react-course/](The Ultimate React Course) by Jonas Schmedtmann.
+This project is a small React Quiz from [The Ultimate React Course](https://www.udemy.com/course/the-ultimate-react-course/) by Jonas Schmedtmann.
 Demonstrates the possibilities of using React `useReducer` hook.
 
 ## Available Scripts
