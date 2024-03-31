@@ -132,6 +132,7 @@ progress[value]::-moz-progress-bar {
   border-radius: var(--border-radius);
 }
 
+
 .btn {
   display: block;
   font-family: inherit;
